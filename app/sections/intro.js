@@ -12,7 +12,7 @@ export default function Intro() {
                     Hey There!
                 </p>
                 <p className='text-day-three'>
-                My name is Edward Magtoto, I am a full-stack developer who recently graduated from the Southern Alberta Institute of Technology. Throughout my academic career, I&apos;ve honed my abilities in various programming languages such as Python, Java, and JavaScript, and gained hands-on experience with frameworks like React and Node.js. My projects have ranged from developing web applications to creating innovative solutions for real-world problems, demonstrating my ability to adapt and thrive in different programming environments.
+                    My name is Edward Magtoto, I am a full-stack developer who recently graduated from the Southern Alberta Institute of Technology. Throughout my academic career, I've honed my abilities in various programming languages such as Python, Java, and JavaScript, and gained hands-on experience with frameworks like React and Node.js. My projects have ranged from developing web applications to creating innovative solutions for real-world problems, demonstrating my ability to adapt and thrive in different programming environments.
                 </p>
                 <div>
                     <TechSkillsList />
