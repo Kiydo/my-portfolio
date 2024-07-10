@@ -6,6 +6,9 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --main-colour-one: #E9EAEC;
+  --main-colour-two: #90ADC6;
+  --main-colour-three: #333652;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -82,5 +85,16 @@ body {
 }
 .hover-transition:hover {
   transform: scale(1.1);
+}
+
+/* AESTHETIC */
+.curved-bottom {
+  position:relative;
+  bottom:0;
+  left:0;
+  width: 100%;
+  height: 100px;
+  background: radial-gradient(ellipse at top, var(--main-colour-two) 71%, var(--main-colour-one) 20%);
+  z-index: 1;
 }
 
