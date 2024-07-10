@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* COLOUR DAY MODE ------------------------------------------------------------------------------------------------------------- */
+/* Background Colour */
+.bg-day-one {
+  background-color: #E9EAEC;
+}
+.bg-day-two {
+  background-color: #90ADC6;
+}
+.bg-day-three {
+  background-color: #333652;
+}
+.bg-day-trim {
+  background-color: #FAD02C;
+}
+/* Text Colour */
+.text-fixed-day-one {
+  color: #E9EAEC;
+}
+.text-day-one {
+  color: #E9EAEC;
+}
+.text-day-one:hover {
+  color: #90ADC6;
+}
+
+.text-day-two {
+  color: #90ADC6;
+}
+
+.text-day-three {
+  color: #333652;
+}
+.text-day-three-hoverable {
+  color: #333652;
+}
+.text-day-three-hoverable:hover {
+  color: #90ADC6;
+}
+
+.text-day-trim {
+  color: #FAD02C;
+}
+
+/* TRANSITIONS */
+.hover-transition {
+  transform: scale(1);
+  transition: transform 300ms;
+}
+.hover-transition:hover {
+  transform: scale(1.1);
+}
+
