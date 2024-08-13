@@ -1,4 +1,5 @@
 import Capstone from '../_components/projectShowcase/projectCapstone';
+import GameJamSpace from '../_components/projectShowcase/gameJamSpace';
 
 export default function Projects() {
     return (
@@ -13,6 +14,9 @@ export default function Projects() {
             </div>
             <div>
                 <Capstone />
+            </div>
+            <div>
+                <GameJamSpace />
             </div>
         </div>
     )
