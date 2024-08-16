@@ -78,6 +78,10 @@ body {
   color: #FAD02C;
 }
 
+.text-link {
+  color: #333652;
+}
+
 /* TRANSITIONS */
 .hover-transition {
   transform: scale(1);

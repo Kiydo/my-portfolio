@@ -4,7 +4,9 @@ import ProjectVideo from '../projectVideo';
 import FadeInIcon from '../fadeInIcon';
 import ProjectFeatures from '../projectFeatures';
 import ScreenSlider from '../screenSlider';
+import LinksDisplay from '../linksDisplay';
 import Image from 'next/image';
+
 
 export default function ProjectCapstone() {
     const [showDescription, setShowDescription] = useState(false);
@@ -18,7 +20,7 @@ export default function ProjectCapstone() {
         { feature: "Scheduling", logo: '/media/photos/projects/capstone/calenderIcon.png' },
         { feature: "Content Management", logo: '/media/photos/projects/capstone/editIcon.png' },
         { feature: "Blogging", logo: '/media/photos/projects/capstone/blogIcon.png' },
-        { feature: "Newsletters", logo: '/media/photos/projects/capstone/newsletterIcon.png' },
+        { feature: "Newsletters", logo: '/media/photos/projects/capstone/newsLetterIcon.png' },
         { feature: 'Admin Roles', logo: '/media/photos/projects/capstone/adminIcon.png' }
     ];
 
@@ -33,22 +35,31 @@ export default function ProjectCapstone() {
         "Capstone project for the Software Development program at SAIT. For an organization based in Calgary, Grow Within Nutrition. The project is a prototype for a new web application the organization requested. The application includes features such as transactions, scheduling, content management, blogging, newsletters, and admin roles. This allows them to manage their business more efficiently and help promote their services.";
 
     const screenShots = [
-        "/media/photos/projects/capstone/slideOne.png",
-        "/media/photos/projects/capstone/slideTwo.png",
-        "/media/photos/projects/capstone/slideThree.png",
-        "/media/photos/projects/capstone/slideFour.png",
-        "/media/photos/projects/capstone/slideFive.png",
-        "/media/photos/projects/capstone/slideSix.png",
-        "/media/photos/projects/capstone/slideSeven.png",
-        "/media/photos/projects/capstone/slideEight.png",
+        "/media/photos/projects/capstone/slideOne.PNG",
+        "/media/photos/projects/capstone/slideTwo.PNG",
+        "/media/photos/projects/capstone/slideThree.PNG",
+        "/media/photos/projects/capstone/slideFour.PNG",
+        "/media/photos/projects/capstone/slideFive.PNG",
+        "/media/photos/projects/capstone/slideSix.PNG",
+        "/media/photos/projects/capstone/slideSeven.PNG",
+        "/media/photos/projects/capstone/slideEight.PNG",
+    ]
+
+    const links = [
+        { name: "Status: Database Offline" },
+        { name: "Website Link", url: "https://gwn-temporary.vercel.app/" },
+        { name: "Github Link", url: "https://github.com/pltduchoang/GWNTemporary" }
     ]
 
     return (
         <div className="min-h-screen flex flex-col items-center bg-day-one">
-            <FadeInIcon className="w-full flex justify-center">
+            <FadeInIcon className="w-full flex flex-col items-center justify-center my-12">
+                <h1 className='flex flex-col items-center my-12 bg-day-three p-4 rounded-lg shadow-lg text-3xl font-bold mb-4 text-day-trim'>
+                    Grow Within Nutrition
+                </h1>
                 <ProjectVideo
                     videoSrc="/media/videos/capstone/trailer.webm"
-                    title="Grow Within Nutrition"
+                    title=""
                 />
             </FadeInIcon>
             <button
@@ -74,10 +85,9 @@ export default function ProjectCapstone() {
                         
                         <ScreenSlider screenshots={screenShots} />
 
-                        <div className='flex flex-col text-center items-center mt-8'>
-                            <p>Status: Database Offline</p>
-                            <p>Website Link: https://gwn-temporary.vercel.app/</p>
-                            <p>Github Link: https://github.com/pltduchoang/GWNTemporary</p>
+                        <div className=''>
+                            <LinksDisplay links={links} />
+
                         </div>
                     </FadeInIcon>
                 </div>

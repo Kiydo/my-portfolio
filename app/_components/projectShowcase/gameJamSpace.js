@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import FadeInIcon from '../fadeInIcon';
 import ProjectFeatures from '../projectFeatures';
+import LinksDisplay from '../linksDisplay';
 import ScreenSlider from '../screenSlider';
 import Image from 'next/image';
 // import GameBanner from "/media/photos/projects/spaceJam/gameBanner.png";
@@ -23,10 +24,16 @@ export default function GameJamSpace() {
         "/media/photos/projects/spaceJam/spacePod.png",
     ]
 
+    const links = [
+        { name: "Micro Jam 016: Space", url: "https://itch.io/jam/micro-jam-016" },
+        { name: "Game Link", url: "https://botmark.itch.io/fire-extinguisher" },
+        { name: "Github Link", url: "https://github.com/markpwns1/FireHydrantSpace"}
+    ]
+
     return (
         <div className='min-h-screen flex flex-col items-center bg-day-one'>
             <FadeInIcon className='w-full flex flex-col items-center justify-center my-12'>
-                <h1 className='flex flex-col items-center my-12 bg-day-two p-4 rounded-lg shadow-lg text-3xl font-bold mb-4 text-day-three'>
+                <h1 className='flex flex-col items-center my-12 bg-day-three p-4 rounded-lg shadow-lg text-3xl font-bold mb-4 text-day-trim'>
                     Micro Jam 016: Space
                 </h1>
                 <Image src={GameBanner} alt="Space Jam Banner"  />
@@ -50,10 +57,8 @@ export default function GameJamSpace() {
 
                         <ScreenSlider screenshots={screenShots} />
 
-                        <div className='flex flex-col text-center items-center mt-8'>
-                            <p>Micro Jam 016: Space: https://itch.io/jam/micro-jam-016</p>
-                            <p>Game Link: https://botmark.itch.io/fire-extinguisher</p>
-                            <p>Github Link: https://github.com/markpwns1/FireHydrantSpace</p>
+                        <div className=''>
+                            <LinksDisplay links={links} />
                         </div>
 
                     </FadeInIcon>

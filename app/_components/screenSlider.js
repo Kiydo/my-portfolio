@@ -27,7 +27,7 @@ export default function ScreenSlider({ screenshots }) {
             <div className="relative flex items-center justify-center p-4">
                 <button
                     onClick={handlePrev}
-                    className="absolute left-0 p-2 py-36 bg-day-three text-day-one rounded-full shadow-md z-10 sm:-ml-4"
+                    className="absolute left-0 p-2 py-48 bg-day-three text-day-one rounded-full shadow-md z-10 sm:-ml-4 duration-300 hover:scale-110"
                     aria-label="Previous screenshot"
                 >
                     ◄
@@ -45,7 +45,7 @@ export default function ScreenSlider({ screenshots }) {
                 </div>
                 <button
                     onClick={handleNext}
-                    className="absolute right-0 p-2 py-36 bg-day-three text-day-one rounded-full shadow-md z-10 sm:-mr-4"
+                    className="absolute right-0 p-2 py-48 bg-day-three text-day-one rounded-full shadow-md z-10 sm:-mr-4 duration-300 hover:scale-110"
                     aria-label="Next screenshot"
                 >
                     ►
