@@ -45,7 +45,7 @@ export default function ProjectCapstone() {
     ];
 
     return(
-        <div className='min-h-screen flex flex-col items-center bg-day-one'>
+        <div className='flex flex-col items-center bg-day-one'>
             <button
                 onClick={toggleDescription}
                 className="hover-transition"
