@@ -54,25 +54,14 @@ export default function ProjectCapstone() {
 
     return (
         <div className="min-h-screen flex flex-col items-center bg-day-one">
-            {/* <div className='flex flex-col items-center my-12 bg-day-three p-4 rounded-lg shadow-lg text-3xl font-bold mb-4 text-day-trim'>
-                <FadeInIcon className="w-full flex flex-col items-center justify-center">
-                    <h1>
-                        Grow Within Nutrition
-                    </h1>
-                    <Image src={GwnBanner} alt="Grow Within Nutrition Banner" />
-                    
-                </FadeInIcon>
-            </div> */}
-            <ProjectBanner 
-                title="Grow Within Nutrition"
-                banner={GwnBanner}
-            />
             <button
                 onClick={toggleDescription}
-                className="text-day-three hover-transition flex items-center gap-2 px-4 py-2 text-day-three rounded-md font-bold bg-day-two"
+                className="hover-transition"
             >
-                {showDescription ? '▲' : '▼'} {/* Unicode characters for up and down arrows */}
-                {showDescription ? 'Hide Details' : 'Show Details'}
+                <ProjectBanner 
+                    title="Grow Within Nutrition"
+                    banner={GwnBanner}
+                />
             </button>
             {showDescription && (
                 <div>

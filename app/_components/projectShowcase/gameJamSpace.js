@@ -33,17 +33,22 @@ export default function GameJamSpace() {
 
     return (
         <div className='min-h-screen flex flex-col items-center bg-day-one'>
-            <ProjectBanner
-                title="Do Fire Extinguishers Work In Space!?"
-                banner={GameBanner}
-            />
             <button
+               onClick={toggleDescription}
+               className="hover-transition" 
+            >
+                <ProjectBanner
+                    title="Do Fire Extinguishers Work In Space!?"
+                    banner={GameBanner}
+                />
+            </button>
+            {/* <button
                 onClick={toggleDescription}
                 className="text-day-three hover-transition flex items-center gap-2 px-4 py-2 text-day-three rounded-md font-bold bg-day-two"
             >
                 {showDescription ? '▲' : '▼'}
                 {showDescription ? ' Hide Details' : ' Show Details'}
-            </button>
+            </button> */}
             {showDescription && (
                 <div>
                     <FadeInIcon className='w-full'>
