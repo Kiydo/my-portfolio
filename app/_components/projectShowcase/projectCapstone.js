@@ -6,6 +6,7 @@ import ProjectFeatures from '../projectFeatures';
 import ScreenSlider from '../screenSlider';
 import LinksDisplay from '../linksDisplay';
 import Image from 'next/image';
+import GwnBanner from "@/public/media/photos/projects/capstone/gwnBanner.PNG";
 
 
 export default function ProjectCapstone() {
@@ -46,22 +47,24 @@ export default function ProjectCapstone() {
     ]
 
     const links = [
-        { name: "Status: Database Offline" },
         { name: "Website Link", url: "https://gwn-temporary.vercel.app/" },
         { name: "Github Link", url: "https://github.com/pltduchoang/GWNTemporary" }
     ]
 
     return (
         <div className="min-h-screen flex flex-col items-center bg-day-one">
-            <FadeInIcon className="w-full flex flex-col items-center justify-center my-12">
-                <h1 className='flex flex-col items-center my-12 bg-day-three p-4 rounded-lg shadow-lg text-3xl font-bold mb-4 text-day-trim'>
-                    Grow Within Nutrition
-                </h1>
-                <ProjectVideo
-                    videoSrc="/media/videos/capstone/trailer.webm"
-                    title=""
-                />
-            </FadeInIcon>
+            <div className='flex flex-col items-center my-12 bg-day-three p-4 rounded-lg shadow-lg text-3xl font-bold mb-4 text-day-trim'>
+                <FadeInIcon className="w-full flex flex-col items-center justify-center">
+                    <h1>
+                        Grow Within Nutrition
+                    </h1>
+                    <Image src={GwnBanner} alt="Grow Within Nutrition Banner" />
+                    {/* <ProjectVideo
+                        videoSrc="/media/videos/capstone/trailer.webm"
+                        title=""
+                    /> */}
+                </FadeInIcon>
+            </div>
             <button
                 onClick={toggleDescription}
                 className="text-day-three hover-transition flex items-center gap-2 px-4 py-2 text-day-three rounded-md font-bold bg-day-two"
@@ -72,6 +75,10 @@ export default function ProjectCapstone() {
             {showDescription && (
                 <div>
                     <FadeInIcon className="w-full">
+                        <ProjectVideo
+                            videoSrc="/media/videos/capstone/trailer.webm"
+                            title=""
+                        />
                         <h2 className='text-center font-bold text-4xl mt-12'>
                             Description
                         </h2>

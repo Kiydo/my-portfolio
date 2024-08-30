@@ -32,12 +32,14 @@ export default function GameJamSpace() {
 
     return (
         <div className='min-h-screen flex flex-col items-center bg-day-one'>
-            <FadeInIcon className='w-full flex flex-col items-center justify-center my-12'>
-                <h1 className='flex flex-col items-center my-12 bg-day-three p-4 rounded-lg shadow-lg text-3xl font-bold mb-4 text-day-trim'>
-                    Micro Jam 016: Space
-                </h1>
-                <Image src={GameBanner} alt="Space Jam Banner"  />
-            </FadeInIcon>
+            <div className='flex flex-col items-center my-12 bg-day-three p-4 rounded-lg shadow-lg text-3xl font-bold mb-4 text-day-trim'>
+                <FadeInIcon className='w-full flex flex-col items-center justify-center'>
+                    <h1>
+                        Micro Jam 016: Space
+                    </h1>
+                    <Image src={GameBanner} alt="Space Jam Banner"  />
+                </FadeInIcon>
+            </div>
             <button
                 onClick={toggleDescription}
                 className="text-day-three hover-transition flex items-center gap-2 px-4 py-2 text-day-three rounded-md font-bold bg-day-two"

@@ -81,6 +81,10 @@ body {
 .text-link {
   color: #333652;
 }
+.text-link:hover {
+  color: #90ADC6;
+  font-weight: bold;
+}
 
 /* TRANSITIONS */
 .hover-transition {
