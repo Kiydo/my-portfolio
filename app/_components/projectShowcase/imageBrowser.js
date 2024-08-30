@@ -5,6 +5,7 @@ import ProjectFeatures from '../projectFeatures';
 import LinksDisplay from '../linksDisplay';
 import ScreenSlider from '../screenSlider';
 import Image from 'next/image';
+import ProjectBanner from '../projectBanner';
 import ImageSearchBanner from "@/public/media/photos/projects/imageBrowser/imageSearchBanner.PNG";
 
 export default function ProjectCapstone() {
@@ -45,14 +46,18 @@ export default function ProjectCapstone() {
 
     return(
         <div className='min-h-screen flex flex-col items-center bg-day-one'>
-            <div className='flex flex-col items-center  bg-day-three p-4 rounded-lg shadow-lg text-3xl font-bold mb-4 text-day-trim'>
+            {/* <div className='flex flex-col items-center  bg-day-three p-4 rounded-lg shadow-lg text-3xl font-bold mb-4 text-day-trim'>
                 <FadeInIcon className='w-full flex flex-col items-center justify-center'>
                     <h1>
                         Photo Search Tool
                     </h1>
                     <Image src={ImageSearchBanner} alt="Photo Search Banner" />
                 </FadeInIcon>
-            </div>
+            </div> */}
+            <ProjectBanner 
+                title="Photo Search Tool"
+                banner={ImageSearchBanner}
+            />
             <button
                 onClick={toggleDescription}
                 className="text-day-three hover-transition flex items-center gap-2 px-4 py-2 text-day-three rounded-md font-bold bg-day-two"
