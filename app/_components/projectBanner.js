@@ -10,13 +10,15 @@ export default function ProjectBanner({ title, banner }) {
                     <h1>
                         {title}
                     </h1>
-                    <Image 
-                        src={banner} 
-                        alt={`${title} Banner`}
-                        height={300}
-                        width={600}
-                        
-                    />  
+                    <div className='relative' style={{width: 850, height: 200}}>
+                        <Image 
+                            src={banner} 
+                            alt={`${title} Banner`}
+                            layout='fill'
+                            objectFit='cover'
+                            
+                        />
+                    </div>  
                 </div>
             </FadeInIcon>
         </div>
