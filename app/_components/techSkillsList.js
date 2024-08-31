@@ -37,13 +37,13 @@ export default function TechSkillsList() {
       ];
 
     return (
-        <div className='my-12 bg-day-two'>
-            <h1 className='text-4xl font-bold mx-0 text-center sm:mb-8 text-day-three font-serif italic'>Programming Languages and Technologies</h1>
+        <div className='my-12'>
+            <h1 className='text-4xl font-bold mx-0 text-center sm:mb-8 font-serif italic'>Programming Languages and Technologies</h1>
             <div className='grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-8 p-2'>
                 {technologies.map((tech, index) => (
                     <FadeInIcon key={index} className="flex flex-col items-center">
                         <Image src={tech.logo} alt={tech.name} width={50} height={50} />
-                        <p className='mt-2 text-day-three text-center'>{tech.name}</p>
+                        <p className='mt-2 text-center'>{tech.name}</p>
                     </FadeInIcon>
                 ))}
             </div>

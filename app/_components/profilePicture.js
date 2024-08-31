@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function ProfilePicture() { 
     return (
-        <div className='bg-day-two'>
+        <div className=''>
             <Image src='/media/photos/pf_pic.png' width={700} height={700} className="max-w-6/12" alt="Profile Picture"/>
         </div>
     );

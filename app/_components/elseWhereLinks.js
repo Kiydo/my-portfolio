@@ -16,7 +16,7 @@ export default function ElseWhereLinks() {
 
     return (
         <div>
-            <div className='flex items-center justify-center bg-day-one'>
+            <div className='flex items-center justify-center'>
                 {icons.map((icon, index) => (
                     <FadeInIcon key={index} className="px-10 py-4 flex flex-col items-center justify-center">
                         <a
