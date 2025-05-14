@@ -26,7 +26,7 @@ export default function ElseWhereLinks() {
                             className='flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-110'
                         >
                             <Image src={icon.icon} alt={icon.name} width={50} height={50} />
-                            <p className='text-day-three-hoverable text-center'>{icon.name}</p>
+                            <p className='text-day-three text-center'>{icon.name}</p>
                         </a>
                     </FadeInIcon>
                 ))}
