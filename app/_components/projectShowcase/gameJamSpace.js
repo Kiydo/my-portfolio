@@ -16,6 +16,21 @@ export default function GameJamSpace() {
         setShowDescription(prevState => !prevState);
     };
 
+    const features = [
+        {feature: "Environmental Hazards", logo: '/media/photos/projects/spaceJam/asteroidIcon.png'},
+        {feature: "Resource Management", logo: '/media/photos/projects/spaceJam/oxygenIcon.png'},
+        {feature: "Propulsion-Based Movement", logo: '/media/photos/projects/spaceJam/extinguisherIcon.png'},
+        {feature: "Escape Ending", logo: '/media/photos/projects/spaceJam/shipIcon.png'}
+    ]
+
+    const renderFeatures = (item) => (
+        <div className="flex flex-col items-center font-bold">
+            <Image src={item.logo} alt={item.feature} width={100} height={100} />
+            <p>{item.feature}</p>
+        </div>
+    )
+
+
     const projectDescription = "The game 'Do Fire Extinguishers Work In Space!?' was created during 'Micro Jam 016' with the theme being Space. The game is first person where the players only option for traversing is via fire extinguisher while they are stranded in space. The player must collect oxygen tanks and extra fire extinguishers to survive and avoid asteroids to reach the escape pod. The game was created in 48 hours using Unity, Blender, and Asprite."
 
     const screenShots = [
@@ -58,7 +73,11 @@ export default function GameJamSpace() {
                         <div className="my-10 max-w-4xl mx-12">
                                 <p>{projectDescription}</p>
                         </div>
+                        <h2 className='text-center font-bold text-4xl mt-12'>
+                            Features
+                        </h2>
 
+                        <ProjectFeatures items={features} renderItem={renderFeatures} />
                         <ScreenSlider screenshots={screenShots} />
 
                         <div className=''>
