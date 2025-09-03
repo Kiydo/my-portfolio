@@ -9,9 +9,9 @@ import Image from 'next/image';
 
 export default function ElseWhereLinks() {
     const icons = [
-        { name: 'GitHub', icon: '/media/photos/linkIcons/github-mark.png', url: 'https://github.com/Kiydo' },
-        { name: 'LinkedIn', icon: '/media/photos/linkIcons/in-logo.png', url: 'https://www.linkedin.com/in/edward-magtoto-964b711a0/?trk=opento_sprofile_goalscard' },
-        { name: 'Email', icon: '/media/photos/linkIcons/email.png', url: 'mailto:edward.magtoto@hotmail.com' }
+        { name: 'GitHub', icon: '/media/photos/linkIcons/github-mark-white.png', url: 'https://github.com/Kiydo' },
+        { name: 'LinkedIn', icon: '/media/photos/linkIcons/in-logo-white.png', url: 'https://www.linkedin.com/in/edward-magtoto-964b711a0/?trk=opento_sprofile_goalscard' },
+        { name: 'Email', icon: '/media/photos/linkIcons/email-white.png', url: 'mailto:edward.magtoto@hotmail.com' }
     ];
 
     return (
@@ -26,7 +26,7 @@ export default function ElseWhereLinks() {
                             className='flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-110'
                         >
                             <Image src={icon.icon} alt={icon.name} width={50} height={50} />
-                            <p className='text-day-three text-center'>{icon.name}</p>
+                            <p className='text-day-one text-center'>{icon.name}</p>
                         </a>
                     </FadeInIcon>
                 ))}

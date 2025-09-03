@@ -9,9 +9,9 @@ import Footer from './_components/footer';
 export default function Home() {
     return (
         <div className='min-h-screen bg-day-one font-serif text-day-three'>
-            <div>
+            {/* <div>
                 <NavBar />
-            </div>
+            </div> */}
             <div>
                 <Intro />
             </div>

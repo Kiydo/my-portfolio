@@ -50,6 +50,10 @@ body {
   background-color: #FAD02C;
 }
 /* Text Colour */
+.text-outline {
+  -webkit-text-stroke: 2px black;
+}
+
 .text-fixed-day-one {
   color: #E9EAEC;
 }
@@ -93,6 +97,23 @@ body {
 }
 .hover-transition:hover {
   transform: scale(1.1);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 6s ease infinite;
 }
 
 /* AESTHETIC */

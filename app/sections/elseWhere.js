@@ -3,8 +3,8 @@ import ElseWhereLinks from '../_components/elseWhereLinks';
 export default function ElseWhere() {
     return (
         <div>
-            <div className='bg-day-two py-10'>
-                <h1 className='text-4xl font-bold text-center'>
+            <div className='bg-day-three py-16'>
+                <h1 className='text-4xl font-bold text-center text-fixed-day-one'>
                     My Links
                 </h1>
                 <div>
@@ -12,8 +12,8 @@ export default function ElseWhere() {
                 </div>
                 
             </div>
-            <div className="curved-bottom">
-            </div>
+            {/* <div className="curved-bottom">
+            </div> */}
         </div>
     )
 }
