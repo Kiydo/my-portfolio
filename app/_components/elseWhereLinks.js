@@ -11,7 +11,8 @@ export default function ElseWhereLinks() {
     const icons = [
         { name: 'GitHub', icon: '/media/photos/linkIcons/github-mark-white.png', url: 'https://github.com/Kiydo' },
         { name: 'LinkedIn', icon: '/media/photos/linkIcons/in-logo-white.png', url: 'https://www.linkedin.com/in/edward-magtoto-964b711a0/?trk=opento_sprofile_goalscard' },
-        { name: 'Email', icon: '/media/photos/linkIcons/email-white.png', url: 'mailto:edward.magtoto@hotmail.com' }
+        { name: 'Email', icon: '/media/photos/linkIcons/email-white.png', url: 'mailto:edward.magtoto@hotmail.com' },
+        { name: 'Itch', icon: '/media/photos/linkIcons/itch.png', url: 'https://kydo13.itch.io/'}
     ];
 
     return (
