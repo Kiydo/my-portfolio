@@ -32,6 +32,9 @@ export default function Intro() {
                         Edward Magtoto
                     </h1> */}
                 </div>
+                <div className=''>
+                    
+                </div>
             </div>
         </div>
     )
