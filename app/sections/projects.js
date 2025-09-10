@@ -1,6 +1,8 @@
 import Capstone from '../_components/projectShowcase/projectCapstone';
 import GameJamSpace from '../_components/projectShowcase/gameJamSpace';
+import GameJamGamble from '../_components/projectShowcase/gameJamGamble';
 import ImageBrowser from '../_components/projectShowcase/imageBrowser';
+
 
 export default function Projects() {
     return (
@@ -15,6 +17,9 @@ export default function Projects() {
                 </div>
                 <div>
                     <GameJamSpace />
+                </div>
+                <div>
+                    <GameJamGamble />
                 </div>
                 <div>
                     <ImageBrowser />
