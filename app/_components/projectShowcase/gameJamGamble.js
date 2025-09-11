@@ -31,7 +31,9 @@ export default function GameJameGamble() {
     ]
 
     const links = [
-
+        { name: "Micro Jam 045: Minature", url: "https://kydo13.itch.io/lady-luck"},
+        { name: "Game Link", url: "https://kydo13.itch.io/lady-luck"},
+        { name: "Github Link", url: "https://github.com/Kiydo/GameJam45"}
     ]
 
     return (
@@ -45,6 +47,30 @@ export default function GameJameGamble() {
                     banner={GameBanner}
                 />
             </button>
+
+            {showDescription && (
+                <div>
+                    <FadeInIcon className='w-full'>
+                        <h2 className='text-center font-bold text-4xl mt-12'>
+                                Description
+                        </h2>
+                        <div className="my-10 max-w-4xl mx-12">
+                                <p>{projectDescription}</p>
+                        </div>
+                        <h2 className='text-center font-bold text-4xl mt-12'>
+                            Features
+                        </h2>
+
+                        <ProjectFeatures items={features} renderItem={renderFeatures} />
+                        <ScreenSlider screenshots={screenShots} />
+
+                        <div className=''>
+                            <LinksDisplay links={links} />
+                        </div>
+
+                    </FadeInIcon>
+                </div>
+            )}
         </div>
     )
 }
