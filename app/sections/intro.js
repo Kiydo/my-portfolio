@@ -8,7 +8,7 @@ import test from "../../styles/intro-curve.svg";
 
 export default function Intro() {
     return (
-        <div className="relative w-full h-[500px] overflow-hidden">
+        <div className="relative w-full h-[950px] overflow-hidden">
             <div>
                 <Image 
                     src='/media/photos/person/EdwardBanner.png'

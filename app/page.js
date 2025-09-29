@@ -21,9 +21,9 @@ export default function Home() {
             <div>
                 <Projects />
             </div>
-            <div className='mt-64'>
+            {/* <div className='mt-64'>
                 <Footer />
-            </div>
+            </div> */}
         </div>
     );
 }
