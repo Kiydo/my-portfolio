@@ -22,15 +22,18 @@ export default function ScreenSlider({ screenshots }) {
         }, 500); // Transition duration
     };
 
+    const buttCharacter = ">"
+    const buttCharacter2 = "<"
+
     return (
         <div>
             <div className="relative flex items-center justify-center w-[880px] p-4 bg-day-three rounded-lg shadow-lg mx-auto">
                 <button
                     onClick={handlePrev}
-                    className=" left-0 p-2 py-48 bg-day-three text-day-one rounded-full shadow-md z-10 sm:-ml-4 duration-300 hover:scale-110"
+                    className="absolute left-1 p-2 py-2 bg-day-one text-day-three rounded-full shadow-md z-10 sm:-mr-4 font-bold duration-200 hover:scale-110 top-1/2 -translate-y-1/2"
                     aria-label="Previous screenshot"
                 >
-                    ◄
+                    {buttCharacter2}
                 </button>
                 <div className="flex-shrink-0 w-auto h-auto rounded shadow-md overflow-hidden">
                     <div style={{ width: 800, height: 450 }} className={`relative ${isTransitioning ? 'transition-opacity duration-500 opacity-0' : 'transition-opacity duration-500 opacity-100'}`}>
@@ -44,10 +47,10 @@ export default function ScreenSlider({ screenshots }) {
                 </div>
                 <button
                     onClick={handleNext}
-                    className="right-0 p-2 py-48 bg-day-three text-day-one rounded-full shadow-md z-10 sm:-mr-4 duration-300 hover:scale-110"
+                    className="absolute right-5 p-2 py-2 bg-day-one text-day-three rounded-full shadow-md z-10 sm:-mr-4 font-bold duration-200 hover:scale-110 top-1/2 -translate-y-1/2"
                     aria-label="Next screenshot"
                 >
-                    ►
+                    {buttCharacter}
                 </button>
             </div>
             <div className="flex space-x-2 mt-4 items-center justify-center">
