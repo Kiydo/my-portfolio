@@ -7,7 +7,7 @@ export default function LinksDisplay({ links }) {
             <h2 className='font-bold text-4xl'>Links</h2>
             {links.map((link, index) => (
                 <a
-                    className='text-link hover-transition mt-2'
+                    className='text-link duration-200 hover-transition mt-2'
                     key={index}
                     href={link.url}
                 >

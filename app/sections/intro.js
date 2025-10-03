@@ -5,37 +5,12 @@ import TechSkillsList from '../_components/techSkillsList';
 import ElseWhere from '../_components/elseWhereLinks';
 import { useContextProvider } from "@/app/_utils/globalContext";
 import test from "../../styles/intro-curve.svg";
+import WebPageBanner from '../_components/webpageBanner';
 
 export default function Intro() {
     return (
-        <div className="relative w-full h-[950px] overflow-hidden">
-            <div>
-                <Image 
-                    src='/media/photos/person/EdwardBanner.png'
-                    alt='Website Banner'
-                    fill
-                    className='object-cover'
-                    priority
-                />
-                <div className='absolute inset-0 flex items-center justify-center'>
-                    <h1 className='text-9xl font-bold tracking-wide 
-                                bg-clip-text text-fixed-day-one text-transparent text-outline 
-                                leading-tight'
-                    >
-                        Edward Magtoto
-                    </h1>
-                    {/* <h1 className='text-9xl font-bold tracking-wide 
-                                bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 
-                                bg-clip-text text-transparent animate-gradient text-outline 
-                                leading-tight'
-                    >
-                        Edward Magtoto
-                    </h1> */}
-                </div>
-                <div className=''>
-                    
-                </div>
-            </div>
+        <div>
+            <WebPageBanner />
         </div>
     )
 }
