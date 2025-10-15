@@ -1,10 +1,9 @@
 "use client"
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 // import ProfilePic from '/media/photos/pf_pic.png';
-import { useEffect, useState } from 'react';
 
-export default function webpageBanner() { 
+export default function WebpageBanner() { 
 
     const [scrollY, setScrollY] = useState(0);
 
