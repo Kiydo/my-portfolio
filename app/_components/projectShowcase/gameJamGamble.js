@@ -33,8 +33,8 @@ export default function GameJameGamble() {
     const screenShots = [
         "/media/photos/projects/gambleJam/capture2.PNG",
         "/media/photos/projects/gambleJam/capture3.PNG",
-        "/media/photos/projects/gambleJam/capture4.PNG",
-        "/media/photos/projects/gambleJam/capture5.PNG",
+        "/media/photos/projects/gambleJam/capture4.png",
+        "/media/photos/projects/gambleJam/capture5.png",
         "/media/photos/projects/gambleJam/gamecapture.PNG"
     ]
 

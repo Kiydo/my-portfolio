@@ -16,13 +16,13 @@ export default function WebpageBanner() {
         return() => window.removeEventListener("scroll", handleScroll);
     }, [])
 
-    const shrinkAmount = Math.min(scrollY, 200);
-    const height = 950 - shrinkAmount * 2;
-    const bannerHeight = Math.max(height, 500);
+    const shrinkAmount = Math.min(scrollY, 100);
+    const height = 500 - shrinkAmount * 3;
+    const bannerHeight = Math.max(height, 0);
 
     return (
         <div 
-            className="relative w-full overflow-hidden transition-all duration-300"
+            className="relative w-full mx-auto overflow-hidden transition-all duration-300"
             style={{ height: `${bannerHeight}px` }}
         >
             <div>
@@ -33,20 +33,20 @@ export default function WebpageBanner() {
                     className='object-cover'
                     priority
                 />
-                <div className='grid absolute inset-0 flex items-center justify-center'>
-                    <h1 className='text-9xl font-bold tracking-wide text-center
+                <div className='absolute inset-0 flex items-center justify-center'>
+                    {/* <h1 className='text-9xl font-bold tracking-wide text-center
                                 bg-clip-text text-fixed-day-one text-transparent text-outline 
                                 leading-tight'
                     
                     >
                         Hello! 
-                    </h1>
-                    <h1 className='text-9xl font-bold tracking-wide text-center
+                    </h1> */}
+                    {/* <h1 className='text-9xl font-bold tracking-wide text-center
                                 bg-clip-text text-fixed-day-one text-transparent text-outline 
                                 leading-tight'
                     >
-                        I am Edward Magtoto
-                    </h1>
+                        Edward Magtoto
+                    </h1> */}
                 </div>
             </div>
 

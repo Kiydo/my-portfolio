@@ -36,10 +36,10 @@ export default function GameJamSpace() {
     const overview = ""
 
     const screenShots = [
-        "/media/photos/projects/spaceJam/spaceDamage.PNG",
-        "/media/photos/projects/spaceJam/spaceEnv.PNG",
-        "/media/photos/projects/spaceJam/spaceOxy.PNG",
-        "/media/photos/projects/spaceJam/spacePod.PNG",
+        "/media/photos/projects/spaceJam/spaceDamage.png",
+        "/media/photos/projects/spaceJam/spaceEnv.png",
+        "/media/photos/projects/spaceJam/spaceOxy.png",
+        "/media/photos/projects/spaceJam/spacePod.png",
     ]
 
     const links = [
