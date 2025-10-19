@@ -33,12 +33,19 @@ export default function WebpageBanner() {
                     className='object-cover'
                     priority
                 />
-                <div className='absolute inset-0 flex items-center justify-center'>
+                <div className='grid absolute inset-0 flex items-center justify-center'>
+                    <h1 className='text-9xl font-bold tracking-wide text-center
+                                bg-clip-text text-fixed-day-one text-transparent text-outline 
+                                leading-tight'
+                    
+                    >
+                        Hello! 
+                    </h1>
                     <h1 className='text-9xl font-bold tracking-wide text-center
                                 bg-clip-text text-fixed-day-one text-transparent text-outline 
                                 leading-tight'
                     >
-                        Edward Magtoto
+                        I am Edward Magtoto
                     </h1>
                 </div>
             </div>

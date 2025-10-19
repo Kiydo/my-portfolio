@@ -33,11 +33,13 @@ export default function GameJamSpace() {
 
     const projectDescription = "The game 'Do Fire Extinguishers Work In Space!?' was created during 'Micro Jam 016' with the theme being Space. The game is first person where the players only option for traversing is via fire extinguisher while they are stranded in space. The player must collect oxygen tanks and extra fire extinguishers to survive and avoid asteroids to reach the escape pod. The game was created in 48 hours using Unity, Blender, and Asprite."
 
+    const overview = ""
+
     const screenShots = [
-        "/media/photos/projects/spaceJam/spaceDamage.png",
-        "/media/photos/projects/spaceJam/spaceEnv.png",
-        "/media/photos/projects/spaceJam/spaceOxy.png",
-        "/media/photos/projects/spaceJam/spacePod.png",
+        "/media/photos/projects/spaceJam/spaceDamage.PNG",
+        "/media/photos/projects/spaceJam/spaceEnv.PNG",
+        "/media/photos/projects/spaceJam/spaceOxy.PNG",
+        "/media/photos/projects/spaceJam/spacePod.PNG",
     ]
 
     const links = [

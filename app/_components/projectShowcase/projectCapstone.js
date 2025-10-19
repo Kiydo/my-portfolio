@@ -34,7 +34,9 @@ export default function ProjectCapstone() {
     );
 
     const projectDescription =
-        "Capstone project for the Software Development program at SAIT. For an organization based in Calgary, Grow Within Nutrition. The project is a prototype for a new web application the organization requested. The application includes features such as transactions, scheduling, content management, blogging, newsletters, and admin roles. This allows them to manage their business more efficiently and help promote their services.";
+        "Capstone project for the Software Development program at SAIT. For an organization based in, Grow Within Nutrition (no longer active). The project is a prototype for a new web application the organization requested. The application includes features such as transactions, scheduling, content management, blogging, newsletters, and admin roles. This allows them to manage their business more efficiently and help promote their services.";
+
+    const projectOverview = "Our team was tasked by Grow Within Nutrition to develop a new web application to replace their outdated static website. The goal was to create a more interactive and engaging platform for both staff and clients, making it easier to connect with new customers while streamlining the organization's daily operations. To achieve this, we implemented role-based accounts to distinguish between staff and clients. Staff members gained the ability to create newsletters and blog posts to better engage with their audience. Additional features such as transaction processing and appointment scheduling were integrated to simplify staff workflows and allow clients to easily book appointments online."
 
     const screenShots = [
         "/media/photos/projects/capstone/slideOne.PNG",
@@ -75,6 +77,12 @@ export default function ProjectCapstone() {
                         </h2>
                         <div className="my-10 max-w-4xl mx-12">
                             <p>{projectDescription}</p>
+                        </div>
+                        <h2 className='text-center font-bold text-4xl mt-12'>
+                            Project Overview
+                        </h2>
+                        <div className="my-10 max-w-4xl mx-12">
+                            <p>{projectOverview}</p>
                         </div>
                         <h2 className='text-center font-bold text-4xl mt-12'>
                             Features

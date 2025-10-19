@@ -31,11 +31,11 @@ export default function GameJameGamble() {
     const projectDescription = "'Lady Luck' was created during Micro Jam 045' with the themes being Minature and Gambling Addiction. In this game you Control the forces of luck and decide who wins or loses with the oputcome of the game dependent on not just your choices but also your luck. The game was created in 48 hours using Godot and Asprite." 
 
     const screenShots = [
-        "/media/photos/projects/gambleJam/capture2.png",
-        "/media/photos/projects/gambleJam/capture3.png",
-        "/media/photos/projects/gambleJam/capture4.png",
-        "/media/photos/projects/gambleJam/capture5.png",
-        "/media/photos/projects/gambleJam/gamecapture.png"
+        "/media/photos/projects/gambleJam/capture2.PNG",
+        "/media/photos/projects/gambleJam/capture3.PNG",
+        "/media/photos/projects/gambleJam/capture4.PNG",
+        "/media/photos/projects/gambleJam/capture5.PNG",
+        "/media/photos/projects/gambleJam/gamecapture.PNG"
     ]
 
     const links = [
