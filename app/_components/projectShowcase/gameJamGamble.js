@@ -62,7 +62,7 @@ export default function GameJameGamble() {
                         <h2 className='text-center font-bold text-4xl mt-12'>
                                 Description
                         </h2>
-                        <div className="my-10 max-w-4xl mx-12">
+                        <div className="my-10 max-w-4xl mx-12 text-day-two-fixed bg-day-three">
                                 <p>{projectDescription}</p>
                         </div>
                         <h2 className='text-center font-bold text-4xl mt-12'>
