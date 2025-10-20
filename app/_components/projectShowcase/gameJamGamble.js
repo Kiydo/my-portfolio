@@ -45,7 +45,7 @@ export default function GameJameGamble() {
     ]
 
     return (
-        <div className='flex flex-col items-center bg-day-one'>
+        <div className='flex flex-col items-center'>
             <button
                 onClick={toggleDescription}
                 className="hover-transition"
