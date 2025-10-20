@@ -27,7 +27,7 @@ export default function AnimateBg() {
                 id="tsparticles"
                 particlesLoaded={particlesLoaded}
                 options={{
-                background: { color: { value: "#90ADC6" } },
+                background: { color: { value: "#000000" } },
                 fpsLimit: 120,
                 interactivity: {
                     events: {

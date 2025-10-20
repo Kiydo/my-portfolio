@@ -68,7 +68,7 @@ export default function GameJamSpace() {
             </button> */}
             {showDescription && (
                 <div className='font-bold'>
-                    <FadeInIcon className='w-full'>
+                    <FadeInIcon className='w-full text-fixed-day-one'>
                         <h2 className='text-center font-bold text-4xl mt-12'>
                                 Description
                         </h2>

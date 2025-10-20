@@ -45,7 +45,7 @@ export default function ProjectCapstone() {
     ];
 
     return(
-        <div className='flex flex-col items-center font-bold'>
+        <div className='flex flex-col items-center font-bold '>
             <button
                 onClick={toggleDescription}
                 className="hover-transition"
@@ -57,7 +57,7 @@ export default function ProjectCapstone() {
             </button>
             {showDescription && (
                 <div>
-                    <FadeInIcon className='w-full'>
+                    <FadeInIcon className='w-full text-fixed-day-one'>
                         <h2 className='text-center font-bold text-4xl mt-12'>
                             Description
                         </h2>

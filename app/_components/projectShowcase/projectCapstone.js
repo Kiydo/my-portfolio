@@ -67,7 +67,7 @@ export default function ProjectCapstone() {
             </button>
             {showDescription && (
                 <div>
-                    <FadeInIcon className="w-full">
+                    <FadeInIcon className="w-full text-fixed-day-one">
                         <ProjectVideo
                             videoSrc="/media/videos/capstone/trailer.webm"
                             title=""

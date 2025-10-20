@@ -13,7 +13,7 @@ import AnimateBg from '../_utils/animateBg';
 export default function Projects() {
     return (
         <div>
-            <h1 className='text-5xl font-bold text-center mb-4 mt-8 py-2'>
+            <h1 className='text-5xl font-bold text-center mb-4 mt-8 py-2 text-fixed-day-one'>
                 Projects
             </h1>
 

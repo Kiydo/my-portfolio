@@ -6,7 +6,7 @@ export default function ElseWhere() {
         <div className="bg-day-three overflow-hidden text-fixed-day-one mx-auto font-serif">
             <div>
                 <h1
-                    className="mx-auto text-center text-9xl text-bold mt-12"
+                    className="mx-auto text-center text-9xl text-bold mt-12 text-day-two-fixed"
                 >
                     {'<Edward Magtoto>'}
                 </h1>

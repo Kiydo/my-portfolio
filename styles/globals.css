@@ -38,13 +38,16 @@ body {
 /* COLOUR DAY MODE ------------------------------------------------------------------------------------------------------------- */
 /* Background Colour */
 .bg-day-one {
-  background-color: #E9EAEC;
+  /* background-color: #E9EAEC; */
+  background-color: #BAA07D;
 }
 .bg-day-two {
-  background-color: #90ADC6;
+  /* background-color: #90ADC6; */
+  background-color: #7d97ba
 }
 .bg-day-three {
-  background-color: #333652;
+  /* background-color: #333652; */
+  background-color: black
 }
 .bg-day-trim {
   background-color: #FAD02C;
@@ -55,13 +58,19 @@ body {
 }
 
 .text-fixed-day-one {
-  color: #E9EAEC;
+  /* color: #E9EAEC; */
+  color: #ffffff
 }
 .text-day-one {
   color: #E9EAEC;
 }
 .text-day-one:hover {
-  color: #90ADC6;
+  /* color: #90ADC6; */
+  color: #BAA07D;
+}
+
+.text-day-two-fixed {
+  color: #BAA07D
 }
 
 .text-day-two {
@@ -69,7 +78,8 @@ body {
 }
 
 .text-day-three {
-  color: #333652;
+  /* color: #333652; */
+  color: #000000
 }
 .text-day-three-hoverable {
   color: #333652;
@@ -83,7 +93,8 @@ body {
 }
 
 .text-link {
-  color: #333652;
+  /* color: #333652; */
+  color: #BAA07D
 }
 .text-link:hover {
   /* color: #90ADC6; */
