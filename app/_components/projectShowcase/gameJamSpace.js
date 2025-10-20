@@ -67,7 +67,7 @@ export default function GameJamSpace() {
                 {showDescription ? ' Hide Details' : ' Show Details'}
             </button> */}
             {showDescription && (
-                <div>
+                <div className='font-bold'>
                     <FadeInIcon className='w-full'>
                         <h2 className='text-center font-bold text-4xl mt-12'>
                                 Description

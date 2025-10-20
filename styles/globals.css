@@ -86,7 +86,8 @@ body {
   color: #333652;
 }
 .text-link:hover {
-  color: #90ADC6;
+  /* color: #90ADC6; */
+  color: #E9EAEC;
   font-weight: bold;
 }
 

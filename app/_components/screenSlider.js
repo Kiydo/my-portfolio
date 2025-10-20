@@ -36,7 +36,7 @@ export default function ScreenSlider({ screenshots }) {
                     {buttCharacter2}
                 </button>
                 <div className="flex-shrink-0 w-auto h-auto rounded shadow-md overflow-hidden">
-                    <div style={{ width: 800, height: 450 }} className={`relative ${isTransitioning ? 'transition-opacity duration-500 opacity-0' : 'transition-opacity duration-500 opacity-100'}`}>
+                    <div style={{ width: 800, height: 450 }} className={`relative ${isTransitioning ? 'transition-opacity duration-200 opacity-0' : 'transition-opacity duration-200 opacity-100'}`}>
                         <Image
                             src={screenshots[currentIndex]}
                             alt={`Screenshot ${currentIndex + 1}`}

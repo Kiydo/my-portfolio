@@ -29,21 +29,6 @@ export default function Projects() {
                     <ImageBrowser />
                 </div>
             </div>
-            
-            {/* <div className='flex flex-col'>
-                <div>
-                    <Capstone />
-                </div>
-                <div>
-                    <GameJamSpace />
-                </div>
-                <div>
-                    <GameJamGamble />
-                </div>
-                <div>
-                    <ImageBrowser />
-                </div>
-            </div> */}
         </div>
     )
 }
