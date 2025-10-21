@@ -1,17 +1,21 @@
 import ElseWhereLinks from '../_components/elseWhereLinks';
 import TechSkillsList from '../_components/techSkillsList';
+import ProfilePicture from '../_components/profilePicture';
 
 export default function ElseWhere() {
     return (
         <div className="bg-day-three overflow-hidden text-fixed-day-one mx-auto font-serif">
-            <div>
+            <div className='grid grid-cols-1 place-items-center'>
                 <h1
                     className="mx-auto text-center text-9xl text-bold mt-12 text-day-two-fixed"
                 >
                     {'<Edward Magtoto>'}
                 </h1>
+                <div className='mt-12'>
+                    <ProfilePicture />
+                </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 mt-12">
+            <div className="grid grid-cols-1 md:grid-cols-2">
                 <div className="h-full flex mt-20 md:ml-36">
                     <div className="flex-grow flex-shrink w-3/4">
                         <p className="text-7xl font-bold text-center mb-4 font-serif italic">

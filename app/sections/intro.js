@@ -10,7 +10,7 @@ import WebPageBanner from '../_components/webpageBanner';
 export default function Intro() {
     return (
         <div>
-            <WebPageBanner />
+            {/* <WebPageBanner /> */}
         </div>
     )
 }

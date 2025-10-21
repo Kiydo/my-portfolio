@@ -6,24 +6,31 @@ import NavBar from './_components/navBar';
 import '../styles/globals.css';
 import Footer from './_components/footer';
 
+import AnimateBg from './_utils/animateBg';
+
 export default function Home() {
     return (
         <div className='min-h-screen font-serif text-day-three'>
-            {/* <div>
-                <NavBar />
-            </div> */}
             <div>
-                <Intro />
-            </div>
-            <div>
-                <ElseWhere />
-            </div>
-            <div>
-                <Projects />
-            </div>
-            {/* <div className='mt-64'>
-                <Footer />
-            </div> */}
+                {/* <div className='absolute inset-0 -z-10'>
+                    <AnimateBg />
+                </div> */}
+                {/* <div>
+                    <NavBar />
+                </div> */}
+                <div>
+                    <Intro />
+                </div>
+                <div>
+                    <ElseWhere />
+                </div>
+                <div>
+                    <Projects />
+                </div>
+                {/* <div className='mt-64'>
+                    <Footer />
+                </div> */}
+                </div>
         </div>
     );
 }
